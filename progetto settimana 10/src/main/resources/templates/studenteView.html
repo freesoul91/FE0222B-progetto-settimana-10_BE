@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Informazioni studente inserite</title>
+</head>
+<body>
+	<h1>Informazioni studente inserite</h1>
+	
+	<p>
+		Matricola: <span th:text="${matricola}"></span>
+	</p>
+	
+	<p>
+		Nome: <span th:text="${nome}"></span>
+	</p>
+	
+	<p>
+		Cognome: <span th:text="${cognome}"></span>
+	</p>
+	
+	<p>
+		Data di Nascita: <span th:text="${dataNascita}"></span>
+	</p>
+	
+	<p>
+		indirizzo: <span th:text="${indirizzo}"></span>
+	</p>
+	
+	<p>
+		Citta: <span th:text="${citta}"></span>
+	</p>
+	
+	<p>
+		Email: <span th:text="${mail}"></span>
+	</p>
+	
+	<p>
+		ID Corso scelto: <span th:text="${corso.idCorso}"></span>
+	</p>
+	
+	<p>
+		Corso scelto: <span th:text="${corso.materia}"></span>
+	</p>
+	
+	<p>
+		Descrizione: <span th:text="${corso.indirizzoStudio}"></span>
+	</p>
+	
+	<p>
+		Numero Esami da Sostenere: <span th:text="${corso.numeroEsami}"></span>
+	</p>
+<a href="/studenti">Lista Studenti</a>
+	<a href="/corsi">Lista Corsi</a>
+</body>
+</html>

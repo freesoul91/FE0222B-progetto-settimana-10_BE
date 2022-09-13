@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delete Studente</title>
+</head>
+<body>
+	<h1>Elimina Studente fornendo la Matricola</h1>
+	<form action="#" th:action="@{/deleteStudente}" th:object="${studente}" 
+	method="get">
+	
+	<p>
+		Matricola: <input type="text" th:field="*{matricola}" />
+	</p>
+	
+	<p>
+		<input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+	</p>
+	
+	
+</form>
+
+</body>
+
+	<a href="/studenti">Lista Studenti</a>
+	<a href="/corsi">Lista Corsi</a>
+</html>
